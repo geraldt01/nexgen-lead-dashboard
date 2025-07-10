@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use Symfony\Component\HttpFoundation\Response;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+
+    Route::post('/leads', function(Request $request) {
+        return response()->json([
+            'message' => "We're requestiong POST /api/leads"
+        ], Response::HTTP_OK);
+    });
