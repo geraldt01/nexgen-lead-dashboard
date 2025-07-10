@@ -10,7 +10,7 @@ class Analytics extends Controller
 {
   public function index()
   {
-    return view('content.dashboard.dashboards-analytics');
+    return view('content.dashboard.dashboards-crm');
   }
 
   public function jsonJobOrderList() {
