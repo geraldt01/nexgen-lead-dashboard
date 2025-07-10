@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Response;
 // });
 
 
-    Route::post('/leads', function(Request $request) {
+    Route::get('/leads', function(Request $request) {
         return response()->json([
             'message' => "We're requestiong POST /api/leads"
         ], Response::HTTP_OK);
