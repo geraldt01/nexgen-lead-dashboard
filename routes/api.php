@@ -2,6 +2,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\CustomerLead;
+
+
+
 
 use Symfony\Component\HttpFoundation\Response;
 /*
@@ -15,13 +19,16 @@ use Symfony\Component\HttpFoundation\Response;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
-
-    Route::get('/leads', function(Request $request) {
-        return response()->json([
-            'message' => "We're requestiong POST /api/leads"
-        ], Response::HTTP_OK);
+    Route::post('/leads', function(Request $request) {
+          $requestJson = Request::capture()->json();
+            $new = new CustomerLead();
+        foreach($requestJson  as $key => $value) {
+            if($key == 'name') {
+                $new->name = $value ? $value : "";
+            }
+            if($key == 'email') {
+                $new->email = $value ? $value : "";
+            }
+            $new->save();
+        }
     });
