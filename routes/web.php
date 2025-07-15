@@ -171,6 +171,8 @@ Route::get('/', [Analytics::class, 'index'])->name('dashboard-crm');
 Route::get('/dashboard/analytics', [Analytics::class, 'index'])->name('dashboard-analytics');
 // Route::get('/dashboard/crm', [Crm::class, 'index'])->name('dashboard-crm');
 Route::get('/json/job-order-dashboard', [Analytics::class, 'jsonJobOrderList']);
+Route::get('/json/lead-dashboard', [Crm::class, 'jsonLeadList']);
+
 
 // locale
 Route::get('lang/{locale}', [LanguageController::class, 'swap']);

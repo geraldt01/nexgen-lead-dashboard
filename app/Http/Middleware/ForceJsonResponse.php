@@ -16,11 +16,11 @@ class ForceJsonResponse
     public function handle(Request $request, Closure $next): Response
     {
         if(!$request->wantsJson()) {
-            return response(
-                'Unsupported request format. Set HTTP header to Accept application/json',
-                Response::HTTP_NOT_ACCEPTABLE
+            // return response(
+            //     'Unsupported request format. Set HTTP header to Accept application/json',
+            //     Response::HTTP_NOT_ACCEPTABLE
 
-            );
+            // );
         }
         return $next($request);
     }
