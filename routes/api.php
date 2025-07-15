@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Response;
           $requestJson = Request::capture()->json();
            $new = new CustomerLead();
             foreach($requestJson as $key => $value) {
-              $new->linked_in = ((isset($value['linked_in'])) ? $value['linked_in'] : "");
+              $new->linkedin_url= ((isset($value['linked_in'])) ? $value['linked_in'] : "");
               $new->email = ((isset($value['email'])) ? $value['email'] : "");
               $new->name = ((isset($value['name'])) ? $value['name'] : "");
               $new->fullname = ((isset($value['fullname'])) ? $value['fullname'] : "");
