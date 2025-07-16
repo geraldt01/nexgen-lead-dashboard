@@ -16,7 +16,7 @@ class Crm extends Controller
     
   public function jsonLeadList() {
     $Inventory = DB::table('customer_leads')
-    ->where('status', '=', 1)
+    // ->where('status', '=', 1)
     ->get();
     foreach($Inventory as $value) {
       $array[] = array(
