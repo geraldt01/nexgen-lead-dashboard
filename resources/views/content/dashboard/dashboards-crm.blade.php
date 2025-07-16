@@ -131,7 +131,9 @@
 
 
 <!-- DataTable with Buttons -->
-<div class="card">
+<div class="row gy-4">
+
+<div class="card ">
   <div class="card-datatable table-responsive pt-0">
     <table class="datatables-basic table table-bordered">
       <thead>
@@ -139,20 +141,19 @@
           <th></th>
           <th></th>
           <th>id</th>
-          <th>LinkekIn Url</th>
+          <th>LinkedIn Url</th>
           <th>Name</th>
           <th>Email</th>
+          <th>Website</th>
+          <th>Phone</th>
           <th>Date</th>
-          <th>Salary</th>
-          <th>Status</th>
-          <th>Action</th>
+          <th></th>
         </tr>
       </thead>
     </table>
   </div>
 </div>
 <!-- Modal to add new record -->
-<div class="row gy-4">
 
   <div class="col-lg-8 col-12">
 
@@ -225,9 +226,10 @@
 
 
 
-<div class="row gy-4">
   <!-- Organic Sessions Chart-->
-  <div class="col-lg-4 col-md-6 order-1 order-lg-0">
+  <!--
+<div class="row gy-4">
+   <div class="col-lg-4 col-md-6 order-1 order-lg-0">
     <div class="card">
       <div class="card-header pb-1">
         <div class="d-flex justify-content-between">
@@ -248,11 +250,11 @@
         <div id="organicSessionsChart"></div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Organic Sessions Chart-->
 
   <!-- Project Timeline Chart-->
-  <div class="col-lg-8 col-12">
+  <!-- <div class="col-lg-8 col-12">
     <div class="card">
       <div class="row">
         <div class="col-md-8 col-12">
@@ -330,11 +332,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Project Timeline Chart-->
 
   <!-- Weekly Overview Chart -->
-  <div class="col-xl-4 col-md-6">
+  <!-- <div class="col-xl-4 col-md-6">
     <div class="card">
       <div class="card-header">
         <div class="d-flex justify-content-between">
@@ -364,11 +366,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Weekly Overview Chart -->
 
   <!-- Social Network Visits -->
-  <div class="col-xl-4 col-md-6">
+  <!-- <div class="col-xl-4 col-md-6">
     <div class="card h-100">
       <div class="card-header d-flex align-items-center justify-content-between">
         <h5 class="card-title m-0 me-2">Social Network Visits</h5>
@@ -458,11 +460,11 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Social Network Visits -->
 
   <!-- Monthly Budget Chart-->
-  <div class="col-xl-4 col-md-6">
+  <!-- <div class="col-xl-4 col-md-6">
     <div class="card h-100">
       <div class="card-header pb-1">
         <div class="d-flex justify-content-between">
@@ -486,11 +488,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Monthly Budget Chart-->
 
   <!-- Meeting Schedule -->
-  <div class="col-xl-4 col-md-6">
+  <!-- <div class="col-xl-4 col-md-6">
     <div class="card h-100">
       <div class="card-header d-flex align-items-center justify-content-between">
         <h5 class="card-title m-0 me-2">Meeting Schedule</h5>
@@ -600,12 +602,12 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Meeting Schedule -->
 
 
   <!-- External Links Chart -->
-  <div class="col-xl-4 col-md-6">
+  <!-- <div class="col-xl-4 col-md-6">
     <div class="card">
       <div class="card-header">
         <div class="d-flex justify-content-between">
@@ -666,11 +668,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ External Links Chart -->
 
   <!-- Payment History -->
-  <div class="col-xl-4 col-md-6">
+  <!-- <div class="col-xl-4 col-md-6">
     <div class="card h-100">
       <div class="card-header d-flex align-items-center justify-content-between">
         <h5 class="card-title m-0 me-2">Payment History</h5>
@@ -813,12 +815,12 @@
         </table>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Payment History -->
 
 
   <!-- Most Sales in Countries -->
-  <div class="col-lg-4 col-md-6 order-2 order-lg-0">
+  <!-- <div class="col-lg-4 col-md-6 order-2 order-lg-0">
     <div class="card h-100">
       <div class="card-header d-flex align-items-center justify-content-between">
         <h5 class="card-title m-0 me-2">Most Sales in Countries</h5>
@@ -919,12 +921,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--/ Most Sales in Countries -->
 
 
 
-
+<!-- 
   <div class="col-lg-8 col-12">
     <div class="card">
       <div class="table-responsive rounded-3">
@@ -942,5 +944,5 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 @endsection

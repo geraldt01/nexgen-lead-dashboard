@@ -20,15 +20,17 @@ class Crm extends Controller
     ->get();
     foreach($Inventory as $value) {
       $array[] = array(
-        '' => $value->id,
+        '' => '',
         'id' => $value->id,
         'linkedin_url' => $value->linkedin_url,
         'full_name' => $value->name,
-        'email' => $value->company,
+        'email' => $value->email,
         'start_date' => $value->page_visited,
         'status' => $value->status,
-        'salary' => $value->website,
+        'website' => $value->website,
         'status' => $value->phone,
+        'date' => $value->created_at,
+        'title' => $value->title,
         '' => '',
       );
     }
