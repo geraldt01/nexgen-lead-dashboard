@@ -145,7 +145,7 @@
           <th>Name</th>
           <th>Email</th>
           <th>Website</th>
-          <th>Phone</th>
+          <th>Phone</th> 
           <th>Date</th>
           <th></th>
         </tr>
